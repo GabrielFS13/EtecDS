@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Aluno Gabriel Falcão Exercício 12: Cria 2 funções em JS que permitem somar ou multiplicar valores informados em 3 caixas de texto.</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+
+		function soma(){
+
+			x=eval(document.prova.c1.value)+eval(document.prova.c2.value)+eval(document.prova.c3.value);
+
+			document.prova.c4.value=x;
+
+		}
+		function multiplica(){
+
+			y=eval(document.prova.c1.value)*eval(document.prova.c2.value)*eval(document.prova.c3.value);
+
+			document.prova.c4.value=y;
+
+		}
+		function div(){
+			z=eval(document.prova.c1.value)/eval(document.prova.c2.value)/eval(document.prova.c3.value);
+
+			document.prova.c4.value=z;
+		}
+		function sub(){
+
+			w=eval(document.prova.c1.value)-eval(document.prova.c2.value)-eval(document.prova.c3.value);
+
+			document.prova.c4.value=w;
+		}
+	</script>
+</head>
+<center><br><br><br><br>
+<form name="prova">
+		<table width="300" heigth="200" bgcolor="#A9A9A9" border="1" cellpadding="3" align="center">
+
+			<tr>
+				<td align="center">Entre com os valores nos campos e dê um clique nos botões.</td>
+			</tr>
+				<tr>
+					<td align="center">Valor 1:<input type="text" name="c1" value="" size="5" maxlength="5"><br>
+						Valor 2:<input type="text" name="c2" value="" size="5" maxlength="5"><br>
+						Valor 3:<input type="text" name="c3" value="" size="5" maxlength="5"><br>
+					</td>
+				</tr>
+				<tr>
+					<td align="center"><input type="button" value="Somar" onclick="soma()">
+										<input type="button" value="Multiplicar" onclick="multiplica()">
+										<input type="button" value="Dividir" onclick="div()">
+										<input type="button" value="Subtrair" onclick="sub()">
+									</td>
+								</tr>
+								<tr>
+									<td align="center">Resposta:<input type="text" name="c4" value="" size="5" maxlength="1000"><br></td>
+								</tr>
+							</table>
+						</form>
+					</center>
+	<!--<form name="prova">
+		Entre com os valores nos campos e dê um clique nos botões.<br><br>
+		Valor 1:<input type="text" name="c1" value="" size="5" maxlength="5"><br>
+		Valor 2:<input type="text" name="c2" value="" size="5" maxlength="5"><br>
+		Valor 3:<input type="text" name="c3" value="" size="5" maxlength="5"><br>
+		<br>
+		<input type="button" value="Somar" onclick="soma()">
+		<input type="button" value="Multiplicar" onclick="multiplica()">
+		<input type="button" value="Dividir" onclick="div()">
+		<input type="button" value="Subtrair" onclick="sub()">
+		Resposta:<input type="text" name="c4" value="" size="5" maxlength="1000"><br>
+	</form>-->
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<body>
+	<meta charset="utf-8">
+	<title>Formulario Aluno gabriel falcao</title>
+	<script type="text/javascript">
+		
+		function validacao(){
+
+			var formulario = document.register;
+			var nome = formulario.nome;
+			var email = formulario.email;
+			var telefone = formulario.telefone;
+			var cep = formulario.cep;
+			var endereço = formulario.endereço;
+			var nomeusu = formulario.nomeusu;
+			var senha = formulario.senha;
+			var senharep = formulario.senharep;
+
+			if (nome.value == ""){
+				alert("Por favor, Insira um nome válido.");
+				return false;
+			}
+			if (telefone.value ==""){
+				alert("Por Favor, insira um telefone válido.");
+				return false;
+
+			}
+			if (email.value.indexOf("@")== -1 || email.value.indexOf(".")==-1){
+				alert("Por favor ,insira um email válido.");
+				return false;
+			}
+			if (cep.value==""){
+				alert("Por favor, insira um cep válido.");
+				return false;
+
+			}
+			if (endereço.value ==""){
+				alert("Por favor, insira um endereço válido.");
+				return false;
+			}
+			if (nomeusu.value==""){
+				alert("Por favor, insira um nome de usuario válido.");
+				return false;
+			}
+			if(senha.value=="" || senha.length<=7){
+				alert("A senha precisa ter 8 ou mais caracteres.");
+				return false;
+			}
+			if(senharep.value!=senha){
+				alert("A senha não está igual ao ultimo campo senha");
+				return false;
+			}
+			return true;
+		}
+
+	</script>
+</head>
+<form name="register" method="post" onsubmit="return validacao()" novalidate>
+	<b><fieldset id="cadastrar">
+		<legend> Cadastro </legend>
+
+		<label for="senha"> Senha </label>
+		<input type="password" name="senha"/>
+		<label for="senharep">Digite a senha novamente</label>
+		<input type="password" name="senharep"/></b>
+
+		<b> <label for="usuario"> Nome de usuário </label>
+			<input type="text" name="nomeusu"/>
+
+			<label for="nome"> Nome </label>
+			<input type="text" name="nome"><br>
+
+			<label for="endereço"> Endereço </label>
+			<input type="endereço" name="endereço"/>
+
+			<label for="cep"> CEP </label>
+			<input type="cep" name="cep"/>
+
+			<label for="telefone"> Telefone </label>
+			<input type="tel" name="telefone"/>
+
+			<label for="email"> Email </label>
+			<input type="email" name="email"/></b>
+
+
+			<button type="submit" name="enviar"> Efetuar Cadastro de usuário </button>
+		</fieldset>
+	</form>
+	<footer><p>Email para contato:XXXXXXXXXX@XXX.XXX redes sociais:xxxxx</footer>
+</body>
+</hmtl>

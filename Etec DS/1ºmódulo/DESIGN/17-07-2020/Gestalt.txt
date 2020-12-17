@@ -1,0 +1,108 @@
+Gestalt é uma teoria criada por um psicólogo chamado Max Wertheimer como umas esquisa de orientação, compreensão e intrepretação ada nosssa visão e da forma como vemos as coisas
+(como nosso cérebro usa parâmetros para leitura visual, enxergar objetos etc.
+
+primeiro o compreendemos como um todo, antes de notar seus elementos
+separadamente.
+Princípio 1: Lei da Pregnância
+A Gestalt afirma que sempre compreendemos o todo de um composto
+visual, antes de aprofundar nos seus detalhes. Dentro do compilado, há
+elementos que seu cérebro consegue destrinchar com rapidez e outros
+mais complexos que você não associa tão rapidamente.
+O nível de facilidade com que identificamos e compreendemos
+visualmente uma peça é mensurado através da pregnância. Dado
+esse fato, a pregnância de um objeto é que vai definir o quão rápido
+ele é percebido e assimilado, e também a eficiência da comunicação da
+mensagem para com o receptor.
+Princípio 2: Lei da Unidade
+
+Complementando a lei da pregnância, temos a unidade, que pode ser
+traduzida por um elemento identificado de acordo com suas
+características como a parte irredutível em um compilado, seja por sua
+cor, forma, ou dimensão. É muito comum que os elementos únicos se
+combinem em função de uma unidade maior, tornando-se assim
+subunidades.
+
+Como segunda lei dos princípios da Gestalt, a lei da unidade é
+essencial na criação, pois se faz presente na organização e disposição
+de elementos, permitindo composições originais e criativas a partir de
+unidades já existentes.
+
+Princípio 3: Lei da Segregação
+
+A terceira lei dos princípios da Gestalt dita que nosso cérebro tem a
+capacidade de diferenciar ou evidenciar objetos, ainda que
+sobrepostos. Isso se deve à variação de forma e estética que um
+elemento tem em comparação com outro. Desse modo, os estímulos
+visuais de cada unidade também são diferentes. A segregação ocorre
+de várias maneiras: pontos, linhas, planos, volumes, sombras, brilhos,
+texturas, relevos, entre outras formas.
+
+No campo do design é sempre bom estar atento aos contrastes de
+elementos. O contraste permite uma melhor leitura visual e
+entendimento do fluxo da mensagem pelo público. A segregação
+ainda trabalha na questão da hierarquia de importância dos objetos. É
+possível dar maior peso a uma parte da mensagem em relação à outra.
+
+Princípio 4: Lei da Proximidade
+
+•De acordo com a Gestalt, elementos muito próximos uns dos outros,
+se encaixando harmoniosamente, são processados em nosso cérebro
+como elementos conjuntos, ou unidades. É o princípio da
+proximidade. Além disso, se tais elementos são semelhantes reforçam
+ainda mais nosso cérebro para a leitura de um só objeto.
+
+Os designers utilizam muito o princípio na criação de identidades
+visuais, principalmente em tipografias e elementos que, em tese,
+seriam comuns, mas com um recurso simples se tornam vários
+elementos. O resultado geralmente se torna uma unidade sólida e
+criativa.
+
+Princípio 5: Lei da Semelhança
+
+Elementos semelhantes em cor ou forma tendem a ser agrupados pelo
+cérebro em uma só unidade. Isso faz com que objetos aproximados,
+apenas com uma característica semelhante, se unam aos olhos do
+leitor. É a quinta lei da Gestalt, a semelhança.
+
+Em um emaranhado de objetos, se o criativo deseja que o receptor da
+mensagem identifique grupos de elementos mais facilmente, ele deve
+prezar pela igualdade de tons e formatos entre as unidades. A
+semelhança é também utilizada para criar formas a partir de outras
+formas.
+Princípio 6: Lei da Unificação
+
+Um objeto formado pro várias unidades pode ser harmoniosamente
+simétrico ou não. Quando ocorre um peso igual de pragnância, 
+proximidade, unidade e semelhança entre objetos de um mesmo
+ composto,podemos dizer que há uma unificação perfeita. Assim
+como a lei da segregação existem níveis de classificação que variam
+de um pior ou melhor organização de forma
+
+Princípio 7: Lei da Continuidade
+
+A sétima lei dos princípios da Gestalt, a lei da continuidade diz
+respeito à maneira como a percepção do fluxo e sequência dos
+elementos funciona em nosso cérebro. Trata-se da tendência dos
+objetos em seguir uma linha de fluidez visual gradativa. Isso é feito
+através de formas, linhas, cores, profundidade, planos, etc. Se você
+enxerga elementos em uma composição de modo ininterrupto, essa
+peça tem uma boa continuidade.
+
+A prioridade da continuidade é estabelecer sempre a melhor forma
+possível aos olhos. Há inúmeros exemplos concretos de aplicação da lei
+da continuidade: a  arquitetura de edifícios, escala de cores, estradas,
+diagramação de textos em revistas e livros.
+
+Princípio 8: Lei do Fechamento
+
+
+O último, porém um dos mais interessantes princípios da Gestalt. O
+fechamento estabelece que o nosso cérebro tem a inclinação de
+fechar ou concluir formas que vemos inacabadas ou abertas. Isso se
+deve a padrões sensoriais e de ordem espacial que temos em nossa
+mente.
+
+Ou seja, ao se guiar pela continuidade de uma forma, prevemos toda a
+sua estrutura. Um exercício que fazíamos de fechamento quando
+crianças é o famoso “ligue os pontos”. Antes de terminar o desenho já
+imaginávamos o resultado do fechamento das linhas.

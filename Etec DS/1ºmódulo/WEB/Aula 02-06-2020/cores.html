@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Exemplo de seleção de cores -Aluno:Gabriel Falcão</title>
+	<p>
+		<h3>Escolha a Cor de sua preferência</h3>
+	</p>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		
+		function Cores(){
+
+			var i 
+		for (i=0; i<document.fcolores.colorin.length;i++){
+				if(document.fcolores.colorin[i].checked)
+					break;
+			}
+			document.bgColor = document.fcolores.colorin[i].value
+		}
+
+	</script>
+</head>
+<body>
+	<form name="fcolores">
+		<input type="radio" name="colorin" value="ffffff" checked> Branco
+		<br>
+		<input type="radio" name="colorin" value="ff0000" checked> Vermelho
+		<br>
+		<input type="radio" name="colorin" value="00ff00" checked> Verde
+		<br>
+		<input type="radio" name="colorin" value="0000ff" checked> Azul
+		<br>
+		<input type="radio" name="colorin" value="ffff00" checked> Amarelo
+		<br>
+		<input type="radio" name="colorin" value="ff00ff" checked> lilás
+		<br>
+		<input type="radio" name="colorin" value="000000" checked> Preto
+		<br>
+		<br>
+		<input type="button" name="" value="Cor" onclick="Cores()">
+	</form>
+</body>
+</html>

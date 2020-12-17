@@ -1,0 +1,65 @@
+Serif= Aparência clásica,boa opção para projetos tradicionais,comuns em publicações impressas como revistas e jornais.
+
+Sans serif=Estilo limpo e moderno,fácil de ser lido em smartphones,computadores e tablets (boa opção para sites então)
+
+TIPOS GRAFIAS DE VIZUALIZAÇÃO
+  
+estilos= Itálico, negrito,maiúcula e fonte de luxo,normalmente usados em pequenos textos por ser bem decorativas (tipo títulos cabeçalhos e designs gráficos complexos)
+
+fontes---podem ser casuais neutras exóticas ou gráficas 
+
+melhor se limitar a 1 ou 2 fontes por projeto// se precisar de mais contraste tente repetir suas fontes em um tamanho,peso ou estilo diferente 
+
+Hierarquia é usada para direcionar o olhar do leitor para a coisa mais importante. 
+ Elementos mais importantes tendem a ser mais grandes/espessos/ou diferente de alguma forma
+
+Entrelinhamento é o espaço entre as linhas do texto(também conhecido como espaçamento entre linhas)
+
+Entreletra espaço entre letras especificas
+
+TIPOS DE TIPOGRAFIA PARA CONVERSÃO
+
+"A voz" do projeto.
+
+A primeira coisa, que devemos levar em conta para escolher uma família tipográfica é escolher "qual a voz que queremos transmitir".
+
+ É para ler ou para ver?
+
+Dentre vários fatores que analisamos pra escolher um tipo, temos a legebilidade e a Leiturabilidade
+
+Legibilidade: diz respeito ao reconhecimento das letras individualmente.A facilidade de distinção dos glifos
+
+Leiturabiliade: diz respeito ao reconhecimento e a influência dos tipos em sentença , como frases e parágrafos.
+
+TIPOS PARA VER!
+
+Quando usamos tipos para "ver" o fator mais importante é o visual.
+
+Não nos preocupamos precisa se preocupar tanto com a leiturabilidade e sim se ela é legível
+
+onde usar
+
+Cartazes,posters,capas,logotipos,embalagens,anúncios,sinalização,títulos.
+
+TIPOS PARA LER
+
+Quando usamos tipos para "ler", um visual impactante não é o mais importante.
+
+neste caso a leitura em blocos é o mais importante.
+
+Onde usar
+
+Jornais,livros,manuais,revistas,blogs,ebooks.
+
+Não precisamos ficar preso a somente um tipo, podemos utilizar mais, mas não se pode abusar, então pode-se usar entre 2 a 3 tipos de fontes por peça.
+
+Ou pode usar a mesma mas variar no tamanho, cor, espaçamento etc. 
+
+Com Serifa e Sem Serifa
+
+No digital o uso do tipo sem serifa é o mais seguro,pois as serifas podem virar "borrões",prejudicando assim a leitura e o entendimento
+
+já no gráfico (impresso) os serifados são os mais adequados,pois a serifa tem a função de auxiliar a leitura, proporcionando continuidade para o texto e tornando-se menos cansativo para os olhos
+
+Mas isso não é uma regra absoluta.
+

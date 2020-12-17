@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <center>
+        <b><u><h1>CADASTRO DE CLIENTES</h1></u></b>
+    </center>
+        <FORM name="frm_cadastro">
+            <fieldset>
+                <legend>Dados Cadastrais:</legend>
+                <Label for="nome_cli">Nome do cliente:</Label><br>
+                <input id="nome_cli" type="text" value="" size="60" maxlength="60" required="yes"><br><br>
+                <Label for="password">Senha:</Label><br>
+                <input id="password" type="password" value="" size="60" maxlength="60" required="yes"><br><br>
+                <Label for="idade">Idade:</Label><br>
+                <input id="idade" type="number" value="" size="60" maxlength="60" required="yes" min="1" max="100"><br><br>
+                <Label for="sexo">Sexo:</Label><br>
+                <input id="masculino" type="radio" name="sexo"> <Label for="masculino">Masculino</Label>
+                <input id="femenino" type="radio" name="sexo"> <Label for="femenino">Femenino</Label><br><br>
+                <label for="cor">Selecione algumas cores:</label>
+                <ol>
+                    <li><input id="amarelo"type="checkbox" name="cor"><label for="amarelo">Amarelo</label></li>
+                    <li><input id="azul"type="checkbox" name="cor"><label for="azul">Azul</label></li>
+                    <li><input id="verde"type="checkbox" name="cor"><label for="verde">Verde</label></li>
+                    <li><input id="vermelho"type="checkbox" name="cor"><label for="vermelho">Vermelho</label></li>
+                </ol>
+                <label for="slc">Selecione uma idade</label>
+                <select id="slc" name="cidades">
+                    <option value="SA">Santo André</option>
+                    <option value="SBC">São Bernado</option>
+                    <option value="SCS">São Caetano</option>
+                    <option value="SP">São Paulo</option>
+                </select><br><br>
+                <label for="ob">Observações gerais</label><br>
+                <textarea name="" id="ob" cols="50%" rows="5">Deixe aqui seu cometário!</textarea>
+            </fieldset>
+
+            <p>
+                <fieldset>
+                    <center>
+                        <input type="submit" value="Enviar">&nbsp;&nbsp;
+                        <input type="reset" value="limpar">
+                    </center>
+                </fieldset>
+            </p>
+        </form>
+</body>
+</html>

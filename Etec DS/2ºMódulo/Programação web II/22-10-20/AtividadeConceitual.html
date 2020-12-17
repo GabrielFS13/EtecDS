@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade conceitual - Gabriel Falcão</title>
+</head>
+        <script type="text/javascript">
+
+                function realizarLaco(){
+                    var inicial = parseFloat(document.getElementById("valorInicial").value)
+                    var final = parseFloat(document.getElementById("valorFinal").value)
+                    var incremento = parseFloat(document.getElementById("valorIncremento").value)
+                    var seleção = document.getElementById("seleção").value;
+                    var para = document.getElementById("for");
+                    var enquanto = document.getElementById("while");
+
+                    var cres = document.getElementById("cres");
+                    var decre = document.getElementById("decre");
+
+                    if(para.checked == true && cres.checked == true && seleção == 'ver'){
+                        for(let i=0;inicial<=final;i++){
+                            //vertical
+                            document.write(inicial+"<br>")
+                            inicial = inicial + incremento;
+                        }
+                        
+                    }else if(para.checked == true && cres.checked == true){
+                        for(let i=0;inicial<=final;i++){
+                            //horizontal
+                            document.write(inicial+" - ")
+                            inicial = inicial + incremento;
+                        }
+                        
+                    }else if(enquanto.checked == true && cres.checked == true && seleção == 'ver'){
+                        while(inicial<=final){
+                            //vertical
+                            document.write(inicial+"<br>")
+                            inicial = inicial + incremento;
+                        }
+                    }else if(enquanto.checked == true && cres.checked == true ){
+                        while(inicial<=final){
+                            //vertical
+                            document.write(inicial+" - ")
+                            inicial = inicial + incremento;
+                        }
+                    }else if(para.checked == true && decre.checked == true && seleção == 'ver'){
+                        for(let i=0;inicial>=final;i++){
+                            //vertical
+                            document.write(inicial+"<br>")
+                            inicial = inicial - incremento;
+                        }
+                    }else if(para.checked == true && decre.checked == true){
+                        for(let i=0;inicial>=final;i++){
+                            //horizontal
+                            document.write(inicial+" - ")
+                            inicial = inicial - incremento;
+                        }
+                    }
+                    else if(enquanto.checked == true && decre.checked == true && seleção == 'ver'){
+                        while(inicial>=final){
+                            //vertical
+                            document.write(inicial+"<br>")
+                            inicial = inicial - incremento;
+                        }
+                    }
+                    else if(enquanto.checked == true && decre.checked == true){
+                        while(inicial>=final){
+                            //horizontal
+                            document.write(inicial+" - ")
+                            inicial = inicial - incremento;
+                        }
+                    }
+                    
+                   
+                }
+
+        </script>
+<body>
+    <br>
+    <form name="form">
+        <center>
+            <h1><u><i>LAÇOS DE REPETIÇÃO</u></i></h1>
+        <label for="valorInicial"><strong>Digite o valor inicial</strong></label>
+        <input type="text" id="valorInicial" size=15>
+        <label for="valorFinal"><strong>Digite o valor Final</strong></label>
+        <input type="text" id="valorFinal" size="15">
+        <label for="valorIncremento"><strong>Digite o Incremento</strong></label>
+        <input type="text" id="valorIncremento" size="15"><br><br>
+        </center>
+        <fieldset>
+            <fieldset>
+                <legend>Selecione o Laço</legend>
+                <input type="radio" value="F"name="#" id="for"><label for="for">For</label>
+                <input type="radio" value="W" name="#" id="while"><label for="while">While</label>
+            </fieldset>
+            <fieldset>
+                <legend>Selecione:</legend>
+                <select id="seleção">
+                    <option value="ver">Vertical</option>
+                    <option value="hor">Horizontal</option>
+                    <input type="radio"name="#1" value="C"  id="cres"><label for="cres">Crescente</label>
+                <input type="radio" name="#1" value="D" id="decre"><label for="decre">Decrescente</label>
+                </select>
+            </fieldset>
+        </fieldset><br>
+        <center>
+        <input type="button" onCLick="realizarLaco()" value="Gerar">
+        </center>
+    </form>
+</body>
+</html>

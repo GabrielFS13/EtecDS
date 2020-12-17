@@ -1,0 +1,50 @@
+  
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>AdvancedCalculator-Login</title>
+    <link rel="stylesheet" href="style1.css" />
+    <script type="text/javascript">
+    	function Login(){
+					var done = 0;
+					var username = document.login.username.value;
+					username = username.toLowerCase();
+					var password = document.login.password.value;
+					password = password.toLowerCase();
+					
+					if (username == "israel" && password == "1234"){
+						window.location="prova-online.html"; done = 1;
+					}
+					if (username == "paulo" && password == "1234"){
+						window.location="prova-online.html"; done = 1;
+					}
+					if (username == "maria" && password == "1234"){
+						window.location="prova-online.html"; done = 1;
+					}
+					if (done == 0){
+						alert("Senha ou usuário inválido.");
+					}
+				}
+    </script>
+  </head>
+  <body>
+    <section class="form-section">
+      <h1>Acessar AdvancedCalculator</h1>
+
+      <div class="form-wrapper">
+        <form name="login">
+          <div class="input-block">
+            <label for="login-email">Email</label>
+            <input type="email" id="login-email" name="username"/>
+          </div>
+          <div class="input-block">
+            <label for="login-password">Password</label>
+            <input type="password" id="login-password" name="password" />
+          </div>
+          <button type="submit" class="btn-login" onclick="Login()">Login</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Barra de Pesquisa</title>
+	<meta  charset="utf-8" />
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			background-color: #f9f9f9;
+		}
+		.pesquisa{
+			width: 400px;
+			height: 40px;
+		}
+		#texto{
+			width: 350px;
+			height: 35px;
+			float: left;
+			font-family: 'Arial';
+			font-size: 20px;
+			border-radius: 5px;
+		}
+		.btn{
+			width: 30px;
+			height: 30px;
+			background-color: #2f4550;
+			padding: 5px 5px;
+			cursor: pointer;
+			border-radius: 5px;
+		}
+		#texto:focus{
+			border: solid 2px #2f4550;
+		}
+		</style>
+	
+</head>
+<body>
+	<form class="pesquisa">
+		
+		<input class="search" id="texto" list="historico" placeholder="Pesquisar"><img src="pesquisa.png" class="btn" onclick="executar()">
+
+	</form>
+</body>
+</html>

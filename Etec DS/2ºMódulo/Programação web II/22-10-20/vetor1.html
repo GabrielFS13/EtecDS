@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetor</title>
+</head>
+    <script>
+        function verificarMeses(){
+            var meses = document.form1.mes.value
+            var numeros = new Array(12)
+
+            numeros[1] = "Janeiro"
+            numeros[2] = "Fevereiro"
+            numeros[3] = "Março"
+            numeros[4] = "Abril"
+            numeros[5] = "Maio"
+            numeros[6] = "Junho"
+            numeros[7] = "Julho"
+            numeros[8] = "Agosto"
+            numeros[9] = "Setembro"
+            numeros[10] = "Outubro"
+            numeros[11] = "Novembro"
+            numeros[12] = "Dezembro"
+
+            if(meses == 0 || meses > 12){
+                alert("Referência de mês inválida!!!")
+                return false
+            }else{
+                alert("O referido mês é "+numeros[meses])
+            }
+
+        }
+    </script>
+<body>
+    <form name="form1" action="">
+        Digite o mês de referência:
+        <input type="text" size="2" name="mes" onchange="verificarMeses()">
+    </form>
+</body>
+</html>

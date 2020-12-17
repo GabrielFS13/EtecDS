@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<title>Validar formulário com JavaScript</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+
+			function validar(){
+				var nome = formuser.nome.value;;
+				var senha = formuser.senha.value;
+				var email = formuser.email.value;
+				var genero = formuser.genero.value;
+
+				if(nome ==""){
+					alert('Por favor, preencha o campo nome.');
+					formuser.nome.focus();
+					return false;
+				}
+				if(senha == "" || senha.length <=7){
+					alert('A senha precisa ter no mínimo 8 caracteres.');
+					formuser.senha.focus();
+					return false;
+				}
+				if(email == "" || email.indexOf('@') == -1){
+					alert('Preencha o campo de email, por favor.');
+					formuser.email.focus();
+					return false;
+				}
+				if (genero ==""){
+					alert('Por favor informe o seu gênero.')
+					formuser.genero.focus();
+					return false;
+				}
+			}
+
+		</script>
+		<style type="text/css">
+			
+			h1{
+				font-family: sans-serif;
+				font-size: 24px;
+			}
+			p{
+				font-family: sans-serif;
+				color: #F00;
+			}
+			body{
+				background-color: #4169E1;
+			}
+			input{
+
+				font-family: sans-serif;
+				font-color: #000;
+			}
+
+		</style>
+	</head>
+	<body>
+		<h1>Cadastrar usuário</h1>
+		<p><i> Os campos com * é de preenchimento obrigatório</i></p>
+		<form name="formuser" action="enviar.php" method="POST">
+			*Nome:<input type="text" name="nome"><br><br>
+			*E-Mail:<input type="text" name="email"><br><br>
+			*Senha:<input type="password" name="senha"><br><br>
+			 Telefone:<input type="text"><br><br>
+			 Data de nascimento:<input type="text" name="data"><br><br>
+			*Gênero:<input type="radio" name="genero">Masculino
+			 <input type="radio" name="genero"> Femenino 
+			 <input type="radio" name="genero"> Outro <br><br>
+
+			<input type="submit" onclick="return validar()"> 
+
+			<input type="reset" name="reset" value="Limpar">
+		</form>
+	</body>
+</html>

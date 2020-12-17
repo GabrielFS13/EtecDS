@@ -1,0 +1,13 @@
+#02661B PARA ESCREVER"ORDEM E PROGRESSO" , PARA PINTAR A PARTE QUE REPRESENTA AS MATAS.
+
+#F2CB05 para pintar a parte da bandeira que representa a riqueza do país.
+
+#022873 para pintar a parte que representa os céus e rios do brasil.
+
+#9FB3A6 para pintar o poste que segura a bandeira.
+
+#03A62C PARA PINTAR A GRAMA
+
+#2187D9 PARA PINTAR O CÉU.
+
+#F2F2F2 para as nuvens

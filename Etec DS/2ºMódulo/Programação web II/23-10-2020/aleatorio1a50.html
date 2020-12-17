@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aleatorio de 1 a 50 - Gabriel Falcão</title>
+    <style>
+        .form{
+            width: 20%;
+            height: 100%;
+            background-color: #f1f1f1;
+            border-radius: 30px;
+            margin-left: 40%;
+            margin-top: 10%;
+            padding: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            border: 1px solid
+        }
+        .form input{
+            padding: 10px;
+            border-radius: 50px;
+            border: 0;
+            outline: none;
+        }.form input:focus{
+            box-shadow: 0 0 10px black;
+        }
+        .form input{
+            background-color: white;
+        }
+        .btn:hover{
+            transition: all 0.4s;
+            padding: 12px;
+            box-shadow: 0 0 10px black;
+        }
+        label{
+            padding: 15px;
+        }
+        #Vitorias{
+            color: #0F0;
+        }
+        #Derrotas{
+            color: #F00;
+        }
+        .vito{
+            color: #0F0;
+        }
+        .derr{
+            color: #F00;
+        }
+    </style>
+</head>
+    <script>
+
+   
+            var c = parseInt((Math.random() * 50) + 1);
+        
+        function aleatorio(){
+
+            var jogo = 1
+            var entrada = document.getElementById("entrada").value;
+            var tentativa = document.getElementById("tentativas");
+            var vitorias =  parseInt(document.frm_entrada.win.value) 
+            var derrotas = parseInt(document.frm_entrada.derr.value)
+            var tentativas = tentativa.value - 1
+
+            tentativa.value = tentativas
+            
+            
+            if(tentativa.value < 0){
+                derrotas += 1
+                document.frm_entrada.derr.value =+derrotas
+                alert("Você perdeu, pois não adivinhou o números nas 5 tentativas!!")
+                tentativa.value = 5
+                c = parseInt((Math.random() * 50) + 1);
+            }else{
+                if(entrada == c){
+                    alert("Correto!!!")
+                    vitorias += 1
+                    document.frm_entrada.win.value =+vitorias
+                    tentativa.value = 5
+                    c = parseInt((Math.random() * 50) + 1);
+                }else if (entrada < c){
+                    alert("Digite um número maior!!")
+    
+                }else if(entrada >c){
+                    alert("Digite um número menor!!!")
+
+                }
+                
+            }
+            
+        }
+    
+          </script>
+<body>
+    <form name="frm_entrada" class="form">
+   <label for="entrada" class="entrada-label">Entre com um valor de 1 a 50</label><br><br>
+   <input type="text" id="entrada" size=20>
+   <label>Tentativas</label>
+   <input type="text" id="tentativas" value="5" size="1" readonly> 
+   <br><br>
+   <input type="button" onclick="aleatorio()" class="btn" value="Confirmar"><br><br>
+   <label class="vito"> Vitórias</label><input type="text" name="win"value="0" id="Vitorias" size="1" readonly> <br>
+   <label class="derr">Derrotas</label><input type="text" name="derr" value="0" id="Derrotas" size="1" readonly> 
+    </form>
+</body>
+</html>

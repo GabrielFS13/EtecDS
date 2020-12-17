@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>Aula 08 - Login em JavaScript</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+	
+
+	<script type="text/javascript">
+			function Login() {
+				var user=document.frm_login.usuario.value;
+				var pass=document.frm_login.senha.value;
+				if((user=="paulo" || user=="paulo@gmail.com") && pass=="123a") {
+					alert("Conta logada com sucesso!!!");
+					window.location="http:www.youtube.com"
+
+				}
+				else {
+					alert("Usuario ou Senha Inválidos!!!");
+					document.frm_login.usuario.value="";
+					document.frm_login.senha.value="";
+					document.frm_login.usuario.focus();
+				}
+				function Limpar(){
+					document.frm_login.usuario.value="";
+					document.frm_login.senha.value="";
+					document.frm_login.usuario.focus();
+				}
+			}
+
+
+	</script>
+
+
+
+
+
+<form name="frm_login">
+	<h2>Área de segurança</h2>
+	<fieldset>
+		<legend>Identificação da Conta</legend>
+		<h3>Usuário ou E-mail:<br>
+			<input id="caixa" type="text" name="usuario" value="" size="40" maxlength="40"><br>
+			Senha:<br>
+			<input id="caixa"type="caixa" type="password" name="senha" size="40" maxlength="40">
+		</h3>	<p>
+				<input id="botao" type="button" value="ENTRAR" onclick="Login()">&nbsp;&nbsp;
+				<input id="botao" type="button" value="LIMPAR" onclick="Limpar()">
+			</p>
+	</fieldset>
+	<p>
+		<fieldset>
+			<legend>ESCOLHA UMA COR - PLANO DE FUNDO:</legend>
+			<input type="radio" name="cor" onclick="document.bgColor='blue'">Azul&nbsp;
+			<input type="radio" name="cor" onclick="document.bgColor='green'">Verde&nbsp;
+			<input type="radio" name="cor" onclick="document.bgColor='yellow'">Amarelo&nbsp;
+			<input type="radio" name="cor" onclick="document.bgColor='Gray'">Cinza&nbsp;
+			<input type="radio" name="cor" onclick="document.bgColor='white'">Branco&nbsp;
+		</fieldset>
+</form>
+
+</body>
+</html>

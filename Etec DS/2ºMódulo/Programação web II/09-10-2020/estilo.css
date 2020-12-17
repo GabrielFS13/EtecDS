@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0
+}
+p{
+    margin-top: 3cm;
+}
+h2{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+}
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    color: blue;
+    font-weight: bold;
+    font-size: 20px;
+}
+#caixa{
+    background: cyan;
+    border-radius: 10px;
+    height: 30px;
+    border-style: 3px solid;
+}
+#caixa:focus{
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+    border: 3px solid;
+    color: blue;
+    box-shadow: 0 0 40px red;
+}
+#botao{
+    height: 45px;
+    width: 150px;
+    background: black;
+    color: yellow;
+    font-style: Arial;
+    font-size: medium;
+    border-style: 2px solid;
+    box-shadow: 0 0 6px;
+    border-radius: 100px;
+}
+#botao:hover{
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+    color: black;
+    box-shadow: 0 0 30px green;
+}

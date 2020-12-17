@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aba de navegação-testes</title>
+	<meta charset="utf-8" />
+	<style type="text/css">
+		
+		*{
+			margin: 0;
+			padding: 0;
+
+		}
+		body{
+			background-color: #ddd;
+			font-family: "Arial";
+		}
+		.nav_tabs{
+			width: 600px;
+			height: 400px;
+			margin: 100px auto;
+			background-color: #fff;
+			position: relative;
+		}
+		.nav_tabs ul{
+			list-style: none;
+		}
+		.nav_tabs ul li{
+			float: left;
+		}
+		.nav_tabs label{
+			width: 100px;
+			padding: 25px;
+			background-color: #363b48;
+			display: block;
+			color: #fff;
+			cursor: pointer;
+			text-align: center;
+		}
+		.rd_tabs:checked ~ label{
+			background-color: #e54e43
+		}
+		.rd_tabs{
+			display: none;
+		}
+		.content{
+			border-top: 5px solid #e34e43;
+			display: none;
+			position: absolute;
+			height: 320px;
+			width: 600px;
+			left: 0;
+		}
+		.content article{
+			padding: 15px;
+			text-align: justify;
+		}
+		.rd_tabs:checked ~ .content{
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<nav class="nav_tabs">
+		<ul>
+			<li>
+				<input class="rd_tabs" type="radio" name="tabs" id="tab1" checked></input>
+				<label for="tab1">Tab1</label>
+				<div class="content">
+					<article>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget rhoncus orci, a sagittis lorem. Quisque mauris elit, pulvinar eu porta id, aliquam non tellus. Ut gravida tempus tortor, at porta mi imperdiet nec. Sed metus est, iaculis quis iaculis ac, venenatis sed massa. Suspendisse turpis ex, porta maximus suscipit nec, sagittis at magna. Maecenas ac varius ipsum. Quisque semper nisl ut ipsum tincidunt, sit amet efficitur risus venenatis. Etiam nec lacus tellus. Nunc sed velit id ligula eleifend consequat pulvinar volutpat ligula.
+					</article>
+				</div>
+			</li>
+			<li>
+				<input class="rd_tabs" type="radio" name="tabs" id="tab2"></input>
+				<label for="tab2">Tab2</label>
+				<div class="content">
+					<article>
+						Quisque id magna at purus sollicitudin sodales. Quisque massa purus, commodo nec ultrices vel, sodales vulputate massa. Proin dignissim, neque at condimentum aliquam, tortor ipsum bibendum sapien, in bibendum metus leo sit amet purus. In feugiat at urna ac eleifend. Fusce a lobortis odio. Donec vel lorem eu magna ultrices bibendum ac a eros. Quisque sed libero scelerisque, eleifend odio ac, porttitor leo. Sed pretium odio dui, sed aliquam mi dictum at.
+					</article>
+				</div>
+			</li>
+			<li>
+				<input class="rd_tabs" type="radio" name="tabs" id="tab3"></input>
+				<label for="tab3">Tab3</label>
+				<div class="content">
+					<article>
+						Morbi posuere suscipit libero at vehicula. Etiam eget dolor at arcu ullamcorper bibendum vel at dolor. Duis odio purus, fermentum at varius eu, fermentum sed leo. Curabitur porta justo interdum lobortis porttitor. Nam at efficitur ligula, ut rhoncus augue. Aliquam sollicitudin condimentum magna in mollis. Curabitur auctor mauris nisl, ac dictum enim laoreet eu. Proin ut sem vehicula leo eleifend rutrum eu eu nulla. Suspendisse vestibulum dignissim velit, quis dictum odio convallis a. Cras ut luctus dui. Etiam euismod, tortor ut convallis interdum, urna lectus dapibus magna, sit amet efficitur felis tortor in mauris. Aliquam erat volutpat.
+					</article>
+				</div>
+			</li>
+			<li>
+				<input class="rd_tabs" type="radio" name="tabs" id="tab4"></input>
+				<label for="tab4">Tab4</label>
+				<div class="content">
+					<article>
+						Vestibulum justo erat, mattis eu sagittis sit amet, posuere nec orci. Ut ac ultrices dui. Maecenas in leo et felis congue fringilla ac ac dui. Donec egestas ac mauris in tempor. Nulla interdum nisi a erat vestibulum, sit amet aliquam urna vehicula. Vivamus fermentum tellus vel pretium luctus. Maecenas semper sed dolor a dignissim. Sed sed lectus et nunc pharetra eleifend.
+					</article>
+				</div>
+			</li>
+		</ul>
+	</nav>
+</body>
+</html>

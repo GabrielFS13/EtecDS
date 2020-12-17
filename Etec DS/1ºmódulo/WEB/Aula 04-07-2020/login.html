@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Login-Aluno:Gabriel Falcão</title>
+	<link rel="sortcut icon" href="ico.png" type="image/png"/>
+	<script language="javascript">
+		
+		function Login(){
+					 
+					var nome = form.username.value;
+					var senha = form.password.value;
+
+					if (nome=="" || nome.indexOf('@') ==-1 || nome.indexOf(".")==-1 ){
+						alert("Esse email não está cadastrado.");
+						form.username.focus();
+						return false;
+					}
+					if (senha == "" || senha.length <=7 ){
+						alert("Por favor preencha o campo senha corretamente, lembre-se de colocar uma senha com no mínino 8 caracteres");
+						form.password.focus();
+						return false;
+					}
+					if(senha=="123456789"){
+						window.location="prova-online.html";
+					}
+					if(nome=="gabriel@gmail.com"){
+						window.location="prova-online.html";
+					}
+				}
+</script>
+</head>
+	<body bgcolor="#EAEBEF">
+		<br><br><br><br>
+		<form name=form>
+		<table width="25%" height="40%" bgcolor="#45629E" align="center" style="font-family: sans-serif; color: white;" border="2" cellpadding="4"><!--para ajustar automaticamente use o 100%-->
+			
+			<tr>
+				<td align="center">Preencha o campo Email e Senha para acessar a Prova Online.</td>
+			</tr>
+
+			<tr>
+				<td align="center">Email:<input type="text" name="username" placeholder="Email"></td>
+			</tr>
+			<tr>
+				<td align="center">Senha:<input type="password" name="password" placeholder="Senha"></td>
+			</tr>
+			<tr>
+				<td align="center"><input type="button" name="enviar" value="Entar" onclick="Login()"></td>
+			</tr>
+			</table>
+<center>
+			<p>Email:gabriel@gmail.com<br>
+			   Senha:1234546789</p>
+			</center>
+</form>
+</body>
+</html>

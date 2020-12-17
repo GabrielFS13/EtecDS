@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Consulta Online</title>
+	<script type="text/javascript" language="javascript">
+		
+function validar() {
+				mensagem = "Nome:";
+				mensagem += document.getElementById("nome").value;
+			for (i=0; i<3; i++) {
+				if (document.frmclinica.titesp[i].checked==true) {
+					mensagem += document.frmclinica.titesp[i].value
+				}
+			}
+				document.getElementById("txt").value=mensagem;
+			}
+	</script>
+
+	<style type="text/css">
+		body {
+			background-color: #FF6347;
+		}
+		h1 {
+			font-family: arial;
+			color: #E6E6FA;
+		}
+		input {
+			color: #00F;
+		}
+		b{
+			color: #A020F0;
+		}
+	</style>
+</head>
+<body>
+	<h1> Clínica Médica Especializadas</h1>
+	<form name="frmclinica">
+		<p>
+			<table width="885" border="0">
+				<tr>
+					<td width="547" valign="top"><p><b class="texto">Marcar consultas:</b>
+						<input type="text" name="nomecli" id="nome" size="80">
+					</p>
+					<p><b class="texto">Número de consultas: </b>
+						<input type="text" name="numcons" id="end" size="80">
+						<b class="texto">Especialidade:</b><br>
+
+						<input type="radio" name="titesp" value="Demartologia" id="especi_0">Dermatololia<br>
+
+						<input type="radio" name="titesp" value="Pediatria" id="especi_1">Pediatria<br>
+
+						<input type="radio" name="titesp" value="Ortopedia" id="especi_2">Ortopedia<br>
+
+						<input type="button" name="button" onclick="validar()" value="Enviar">
+
+						<input type="reset" name="reset" value="limpar">
+					</p>
+					<p>&nbsp;</p>
+				</td>
+
+				<td width="292" valign="top"><p><b class="texto">Extrato clínica</b><br>
+					<textarea name="textarea" cols="30" rows="20" class="texto" id="txt"></textarea>
+		</td>
+		</tr>
+	</table>
+	<p>
+
+	</p>
+</form>
+</body>
+</html>

@@ -1,0 +1,24 @@
+p{
+	color: blue;
+	background-color: yellow;
+}
+h1{
+	font-family: serif;
+	color: red;
+}
+
+h2{
+	font-family: sans-serif;
+}
+p{
+	font-family: monospace;
+}
+body {
+	font-family: "arial", "helvetica", sans-serif;
+}
+p{
+	line-height: 3px; /* tamanho da altura de cada linha */
+	letter-spacing: 3px; /* tamanho do espaço entre cada letra */
+	word-spacing: 5px; /* tamanho do espaço entre cada palavra */
+	text-indent: 30px; /* tamanho da marrgem da primeira linha do texto */
+}

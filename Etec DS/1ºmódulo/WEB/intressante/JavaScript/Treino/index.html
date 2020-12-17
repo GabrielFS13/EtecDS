@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .main{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        padding: 10px;
+    }
+    .main-border{
+        border: 10px solid;
+        border-image-source: linear-gradient(to bottom, rgb(117, 209, 186), rgb(213, 247, 122), rgb(212, 63, 218));
+        border-image-slice: 1;
+    }
+    .bg{
+        background: linear-gradient(to top, red, blue, green);
+        height: 100vh;
+        width: 100%;
+    }
+    table{
+        margin: auto;
+    }
+    input{
+        font-size: 18px;
+        padding: 20px;
+        margin: 5px;
+        display: inline-block;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        align-content: center;
+        
+    }
+    input[type="button"]{
+        width: 50px;
+        height: 50px;
+    }
+    input[type="button"]:hover{
+        cursor: pointer;
+        background-color: #ccc;
+    }
+    .zero{
+        width: 150px;
+    }
+    input[type="text"]{
+        background-color: #ccc;
+    }
+</style>
+<script>
+    function calc(num){
+
+        document.form.saida.value = document.form.saida.value+num
+    }
+    function equal(){
+
+        var saida = document.form.saida.value
+        if(saida){
+            document.form.saida.value = eval(saida)
+        }
+    }
+    function limpa(){
+        document.form.saida.value=""
+    }
+    function back(){
+       var saida =  document.form.saida.value 
+
+       document.form.saida.value = saida.substring(0, saida.length-1)
+    }
+</script>
+</head>
+<body>
+    <div class="bg"></div>
+    <div class="main main-border">
+    <form name="form">
+        <input type="text" id="saida" name="saida">
+    </form>
+    <table>
+        <tr>
+            <th><input type="button" value="C" onclick="limpa()"></th>
+            <th><input type="button" value="<" onclick="back()"></th>
+            <th><input type="button" value="X" onclick="calc('*')"></th>
+            <th><input type="button" value="/" onclick="calc('/')"></th>
+        </tr>
+        <tr>
+            <th><input type="button" value="7" onclick="calc(7)"></th>
+            <th><input type="button" value="8" onclick="calc(8)"></th>
+            <th><input type="button" value="9" onclick="calc(9)"></th>
+            <th><input type="button" value="+" onclick="calc('+')"></th>
+        </tr>
+        <tr>
+            <th><input type="button" value="4" onclick="calc(4)"></th>
+            <th><input type="button" value="5" onclick="calc(5)"></th>
+            <th><input type="button" value="6" onclick="calc(6)"></th>
+            <th><input type="button" value="-" onclick="calc('-')"></th>
+        </tr>
+        <tr>
+            <th><input type="button" value="1" onclick="calc(1)"></th>
+            <th><input type="button" value="2" onclick="calc(2)"></th>
+            <th><input type="button" value="3" onclick="calc(3)"></th>
+            <th rowspan="2"><input style="height: 110px;" type="button" value="=" onclick="equal()"></th>
+        </tr>
+        <tr>
+            <th><input type="button" value="," onclick="calc('.')"></th>
+            <th colspan="2"><input style="width: 110px;" type="button" value="0" onclick="calc(0)"></th>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

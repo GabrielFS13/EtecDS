@@ -1,0 +1,6 @@
+MySQL é o banco de dados da microsoft.
+SQL é uma linguagem que manipula dados no banco de dados.
+
+1-durante a pandemia atual,a tecnologia vem sendo de grande ajuda para evitar momentos tediosos, vivemos na era do entreterimento,ou seja,em qualquer momente e lugar o ser humano tem acesso fácil a algum tipo de entreterimento graças a tecnologia e percebemos isso graças a esse momento de pandemia em que estamos passsando.
+
+2- O Sistema de banco de dados é um sistema que facilita a busca de informação, e facilita o acesso para as mesmas,e ainda mais evita o uso de vários programas diferentes para um função, tipo ao invéz de ultilizar o Word, Exel , PowerPoint para amarzenar certos dados, ao utilizar um banco de dados o trabalho é muito menor e mais prático.

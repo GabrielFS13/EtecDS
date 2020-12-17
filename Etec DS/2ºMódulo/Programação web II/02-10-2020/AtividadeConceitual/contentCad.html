@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+        body{
+            background-color: black;
+            color: white;
+            font-family: 'Roboto',Helvetica,Arial,sans-serif;
+        }
+        .container-input{
+            width: 80%;
+            transform: translate(200px,30%);
+        }
+        .container-input input{
+            font-family: 'Roboto',Helvetica,Arial,sans-serif;
+            padding: 10px 0px 10px 8px;
+            border-radius: 50px;
+            outline: 0;
+            border: 0;
+        }
+        .btn_submit{
+            background-color: orange;
+            cursor: pointer;
+        }
+        .btn_submit:hover{
+            transition: all .4s;
+            transform: translateY(-8px);
+        }
+        .container-input input:hover{
+            transition: all .4s;
+            transform: translateY(-8px);
+        }
+    </style>
+</head>
+<body>
+    <h1>Cadastre-se para receber novidades e interagir nos comentários!</h1>
+    <div class="container-input">
+    <input type="text" placeholder="Informe seu nome"  required="yes" size="40"><br><br>
+
+    <input type="email" placeholder="Informe seu email"  required="yes" size="40"><br><br>
+
+    <input type="password" placeholder="Crie uma senha"  required="yes" size="40"><br><br>
+
+    <input type="password" placeholder="Digite a senha novamente"  required="yes" size="40"><br><br>
+
+    <input class="btn_submit" type="submit" value="Realizar Cadastro">
+    </div>
+</body>
+</html>

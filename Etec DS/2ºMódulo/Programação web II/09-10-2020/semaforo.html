@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de SwitchCase</title>
+</head>
+<body onload="Carregar()">
+    <script>
+            function Carregar(){
+                alert("Atenção selecione uma cor");
+            }
+            function Verificar(){
+                var cores = document.form_farol.cor.value;
+                switch(cores){
+                    case 'vd': 
+                                document.write("<body bgColor='green'")
+                                document.write("<hr>");
+                                document.write("<center>");
+                                document.write("<h1> Siga em frente </h1>");
+                                document.write("<a href='semaforo.html'>voltar</a>");
+                                document.write("</center");
+                                document.write("</hr>");
+                                document.write("</body>")
+                                break;
+                                
+                    case 'am':document.write("<body bgColor='yellow'")
+                                document.write("<hr>");
+                                document.write("<center>");
+                                document.write("<h1> Atenção </h1>");
+                                document.write("<a href='semaforo.html'>voltar</a>");
+                                document.write("</center");
+                                document.write("</hr>");
+                                document.write("</body>")
+                                break;
+
+                    case 've':document.write("<body bgColor='red'")
+                                document.write("<hr>");
+                                document.write("<center>");
+                                document.write("<h1> pare </h1>");
+                                document.write("<a href='semaforo.html'>voltar</a>");
+                                document.write("</center");
+                                document.write("</hr>");
+                                document.write("</body>")
+                                break;
+
+                    default: document.write("<body bgColor='blue'")
+                                document.write("<hr>");
+                                document.write("<center>");
+                                document.write("<h1> Ilegal </h1>");
+                                document.write("<a href='semaforo.html'>voltar</a>");
+                                document.write("</center");
+                                document.write("</hr>");
+                                document.write("</body>")
+                                break;
+                }
+            }
+    </script>
+    <form action="" name="form_farol">
+        <p>
+            <h2>Selecione uma cor do farol</h2>
+            <br>
+            <select name="cor">
+                <option value="vd">Verde</option>
+                <option value="am">Amarelo</option>
+                <option value="ve">Vermelho</option>
+                <option value="az">Azul</option>
+            </select>
+            <input type="button" value="OK" onClick="Verificar()">
+        </p>
+    </form>
+</body>
+</html>

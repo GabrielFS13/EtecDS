@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<hmtl>
+	<head>
+		<link rel="stylesheet" type="text/css" href="estilos.css">
+		<meta charset="utf-8">
+		<title>JavaScript- Aluno Gabriel</title>
+		<script>
+			function Mensagem()
+			{
+				alert ("Preencha o formulário,por favor.");
+			}
+		</script>
+		<script>
+			function Mensagem2()
+			{
+				alert ("Formulário enviado!");
+			}
+		</script>
+	</head>
+<body>
+	<strong>Hoje estamos desenvolvendo JavaScript dentro do HTML.</strong>
+	<p><input type="button" value="Testes com o ducumento" onclick="Mensagem()"/>
+	</p>
+	<form name="frmDeCadastro" id="frmDeCadastro">
+	<fieldset>
+		<table>
+
+			<tr>
+				<td>Nome:</td>
+				<td><input type="text" name="nome" id="nome"/></td>
+			</tr>
+			<tr>
+				<td>Sexo:</td>
+				<td>
+				<input type="radio" name="radio" value="M">Masculino<br />
+				<input type="radio" name="radio" value="F">Feminino
+				</td>
+			</tr>
+			<tr>
+				<td>Interesses:</td>
+				<td>
+				<input type="checkbox" name="interesses" id="JavaScript"/><label for="JavaScript">JavaScript</label>
+				<input type="checkbox" name="interesses" id="PHP"/><label for="php">PHP</label>
+				<input type="checkbox" name="interesses" id="HTML"><label for="html">HTML</label>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<input type="button" name="enviar" id="enviar" value="enviar" onclick="Mensagem2()" />
+		</td>
+		<td>
+			<input type="reset" name="limpar" id="limpar" value="limpar"/>
+		</td>
+	</tr>
+	</table>
+</fieldset>
+</form>
+</body>
+</hmtl>

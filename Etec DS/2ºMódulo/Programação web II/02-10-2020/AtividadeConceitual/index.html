@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Atividade Conceitual - Frameset</title>
+    <style>
+         frame{
+            border: none;
+        }
+    </style>
+</head>
+<frameset rows="15%,*" noresize border="1">
+    <frame src="menucontent.html" scrolling="no"></frame>
+    <frameset cols="*,20%" noresize border="1">
+        <frame src="content.html" scrolling="yes" name="principal"></frame>
+        <frame src="sidecontent.html" scrolling="no"></frame>
+    </frameset>
+</frameset>
+</html>

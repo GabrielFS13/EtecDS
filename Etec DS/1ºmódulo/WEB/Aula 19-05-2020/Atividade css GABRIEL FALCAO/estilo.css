@@ -1,0 +1,31 @@
+p{
+	font-family: arial;
+	font-size: 16px;
+	color: white;
+	line-height: 3px; 
+	letter-spacing: 3px; 
+	word-spacing: 5px; 
+	text-indent: 30px
+}
+h1{
+	font-family: arial;
+	color: red;
+	font-size: 48px;
+}
+img{
+	height: 56px;
+}
+h2{
+	color: red;
+	font-size: 26px;
+}
+#ab{
+	height: 280px;
+}
+body{
+	background-image: url("lupa.jpeg");
+	background-size: 1220px;
+}
+pre{
+	color: white;
+}

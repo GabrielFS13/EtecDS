@@ -1,0 +1,7 @@
+#FDFD54 amarelo
+#7988D9 azul
+#9BD3F1 azul claro
+#E8E6F1 cinza
+#ED7994 vermelho
+#8B5E59 marrom
+#FEDDDE cor de pele

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora JavaScript</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script>
+            function Calc(){
+                var n1 = parseFloat(document.frm_calc.valor1.value);
+                var n2 = parseFloat(document.frm_calc.valor2.value);
+                var soma = (n1+n2);
+                var multi = (n1*n2);
+                var divi = (n1/n2);
+                var sub = (n1-n2);
+                var pote = (n1**n2);
+                var sele =parseInt(document.frm_calc.selec.value); 
+
+                switch(sele){
+                    case 1: document.frm_calc.res.value =+ soma;
+                    break;
+                    case 2: document.frm_calc.res.value =+ sub;
+                    break;
+                    case 3: document.frm_calc.res.value =+ multi;
+                    break;
+                    case 4: document.frm_calc.res.value =+ divi;
+                    break;
+                    case 5: document.frm_calc.res.value =+ pote;
+                    break;
+                    default: alert("Opção Inválida!!!");
+                    break;
+                }
+                 
+                
+            }
+            function Limpar(){
+                document.frm_calc.valor1.value = "";
+                document.frm_calc.valor2.value = "";
+                document.frm_calc.res.value = "";
+                document.frm_calc.valor1.focus();
+            }
+    </script>
+
+    <form name="frm_calc" class="form">
+        <h1>Calculadora</h1>
+        <input class="entrada" type="text" name="valor1" size="20" placeholder="Insira o valor 1"><br><br>
+        <input class="entrada" type="text" name="valor2" size="20" placeholder="Insira o valor 2"><br><br>
+        <select name="selec" class="selecao">
+            <option value="0">Selecione a operação</option>
+            <option value="1">Soma</option>
+            <option value="2">Subtração</option>
+            <option value="3">Multiplicação</option>
+            <option value="4">Divisão</option>
+            <option value="5">Potência</option>
+        </select><br><br>
+        <input class="btn_confirm" type="button" name="botao" onClick="Calc()" value="Calcular"><br><br>
+        <input class="entrada" type="text" name="res" size="20" placeholder="Resultado"><br><br>
+        <input class="btn_limpar" type="button" name="btn_clear" onClick="Limpar()" value="Limpar Campos">
+    </form>
+</body>
+</html>
